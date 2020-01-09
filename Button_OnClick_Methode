@@ -1,0 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ChangeColor : MonoBehaviour
+{
+    public GameObject cube;
+
+    public void OnButtonClick() {
+
+        cube.GetComponent<Renderer>().material.color = Color.red;
+
+    }
+}
+
+/*Die gesamte Erklärung, wie du dieses Script jetzt mit dem Button und Würfel verbindest, so dass es funktioniert, 
+siehst du hier: https://youtu.be/_45HdVUcV00 */
