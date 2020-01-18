@@ -11,3 +11,6 @@ https://www.youtube.com/watch?v=v66p2SA4RBc
 
 2.) Dein erste C#-Code: Mit einem Button einen Würfel einfärben (OnClick()-Methode)
 https://www.youtube.com/watch?v=_45HdVUcV00
+
+3.) Unity: True or false? So programmierst du mit "boolean" und if-/else-Statement:
+https://youtu.be/DY-5EJv89Go
