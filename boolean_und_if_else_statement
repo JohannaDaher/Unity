@@ -1,0 +1,39 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TwoColorChange : MonoBehaviour
+
+{
+    public GameObject cube;
+    public bool red = false;
+
+    public void ChangeColor() { 
+    
+    if (red == false) {
+
+            cube.GetComponent<Renderer>().material.color = Color.red;
+            red = true;
+    }
+
+    else {
+            cube.GetComponent<Renderer>().material.color = Color.white;
+            red = false;
+
+        }
+
+    }
+
+}
+
+
+
+/* Was macht der Code? Wenn du auf den Button klickst, färbt sich das GameObjekt (hier ein Würfel) Rot. Bei erneutem Klick
+auf den Button wird er Weiß. Nächster Klick: Rot. Nächster Klick: Weiß. Dafür wird sowohl der Datentyp "boolean"
+verwendet, als auf das if-/else-Statement. Ein boolean (kurz und im Code: bool) hat nur zwei Werte: false und true.
+Mit dem if-/else-Statement kannst du verschiedene Optionen und entsprechende Reaktionen darauf darstellen. "Falls...., dann
+passiert.... Ansonsten passiert...."
+*/
+
+/* Wie funktioniert das in der Umsetzung bei Unity? Die gesamte Erklärung, wie du dieses Script nutzt, 
+siehst du hier: https://youtu.be/DY-5EJv89Go */
