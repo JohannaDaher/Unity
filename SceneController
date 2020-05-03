@@ -1,0 +1,46 @@
+/* Das ist der Scene-Controller, den wir im Video-Tutorial 
+"So baust und programmierst du dein Startmenü" (https://youtu.be/y4pBejFeNg4) erstellen */
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class SceneController : MonoBehaviour
+
+{
+    public GameObject startscreen;
+
+    void Start()
+    {
+
+        startscreen.SetActive(true);
+        GameObject.Find("Cube").GetComponent<PlayerMovement>().enabled = false;
+
+    }
+
+
+//Das passiert, wenn wir auf den Start-Button klicken:
+
+    public void DeactivateStartscreen() {
+
+        startscreen.SetActive(false);
+        GameObject.Find("Cube").GetComponent<PlayerMovement>().enabled = true;
+
+    }
+    
+
+//Das passiert, wenn wir auf den Highscores-Button klicken:
+
+    public void ChangeMyScene() {
+
+        SceneManager.LoadScene("Highscores", LoadSceneMode.Single);
+    
+    }
+
+
+    void Update()
+    {
+        
+    }
+}
